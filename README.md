@@ -108,6 +108,3 @@ Giacomo Iannucci and Alexandros Beskos,
 ## License
 
 This repository is distributed under the MIT License.
-```
-
-Io **non metterei altro**. È molto più credibile così: repo piccola, due script chiari, istruzioni per riprodurre le analisi principali e basta.
