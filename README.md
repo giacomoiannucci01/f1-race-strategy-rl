@@ -19,7 +19,7 @@ Downloads lap timing, driver, stint, tyre-compound, and pit-stop information for
 
 The script processes the retrieved data and produces formatted Excel files containing the complete race-lap data and the subset of laps with complete sector timing information.
 
-### `f1_race_strategy_rl.py`
+### `race_strategy_rl.py`
 
 Contains the stochastic event-driven race simulator and the reinforcement-learning implementation used for the main experiments in the paper.
 
@@ -50,7 +50,7 @@ https://openf1.org/
 
 Run:
 
-python f1_race_strategy_rl.py --mode main
+python race_strategy_rl.py --mode main
 
 This trains the PPO controller across the random seeds used for the main analysis and performs the paired held-out evaluation against the domain-informed benchmark.
 
@@ -62,7 +62,7 @@ The analysis also produces the bootstrap uncertainty estimates and behavioural s
 
 Run:
 
-python f1_race_strategy_rl.py --mode ablation
+python race_strategy_rl.py --mode ablation
 
 This retrains the controller under the six ablations considered in the paper:
 
@@ -71,7 +71,7 @@ This retrains the controller under the six ablations considered in the paper:
 Run:
 
 
-python f1_race_strategy_rl.py --mode robustness
+python race_strategy_rl.py --mode robustness
 
 
 This evaluates the trained PPO policies under the distribution shifts considered in the paper:
@@ -82,7 +82,7 @@ The policies are evaluated under these modified race conditions without retraini
 
 To run the main experiments, ablations, and robustness analyses sequentially:
 
-python f1_race_strategy_rl.py --mode all
+python race_strategy_rl.py --mode all
 
 ## Reproducibility
 
